@@ -1,18 +1,20 @@
-<div class="aligncenter">
-	<div class="displayinline">
+<div class="row">
+	<div class="col-xs-12 col-sm-4">
 			<%= form_tag topics_path, :class => 'form-inline', :method => 'get'  do %>
-  		 	<%= text_field_tag :search, params[:search], :class => 'form-control input-sm' %>
+  		 	<%= text_field_tag :search, params[:search], :class => 'form-control input-sm form-inline' %>
   		 	<%= submit_tag "Search For A Pony", :title => nil  %>
 				<% end %>
-	</div> | 
-	<div class="displayinline">
+	</div>
+	<div class="col-xs-12 col-sm-4">
  	 	  <%= button_to "See All Ponies", { :action => 'index'}, :method => :get %>
-	</div> | 
-	<div class="displayinline">
+	</div>
+	<div class="col-xs-12 col-sm-4">
 		<%= button_to "Suggest A New Pony", { :action => 'new'}, :method => :get %>
 	</div>
 </div>
 
+
+<br>
 <p id="notice" style="text-align: center"><%= notice %></p>
 <div class="tablewrap">
 <table class="table table-striped table-responsive">

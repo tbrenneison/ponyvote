@@ -9,46 +9,46 @@
 <body>
 	
 	<div class="container">
+
+
+		<!--begin stuff underneath the header -->
 		<div class="row">
-			<div class="col-md-3">
+			<div class="hidden-xs col-sm-2">
+				<%= image_tag "exceptionpony_web.png", :class => "img-responsive"%>
+				<%= image_tag "SQLpony_web.png", :class => "img-responsive"%>
+				<%= image_tag "infinitelooppony_web.png", :class => "img-responsive"%>
+
 			</div>
-			<div id="header" class="col-md-6">
-				<h1>ponyvote</h1>
-				<p><em>or, "let's see if I can build a Rails app in like, two days"</em></p>
-			</div>
-			<div class="col-md-3">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-			</div>
-			<div id="about" class="col-md-8">
+			<div id="about" class="col-sm-8">
+				<div id="header">
+							<h1>PonyVote</h1>
+							<p><em>or, "let's see if I can build a Rails app in like, two days"</em></p>
+				</div>
+				<div>
 				<p>Early on in We Can Code IT's full-time bootcamp, I drew a My Little Pony with a C#
 					cutie mark on a whiteboard.  The idea of "code ponies" unexpectedly took off and they
 					quickly infiltrated everything, up to and including my final project.  Then I wondered,
 					in a final act of pony-induced madness, if I could build a Rails app in the 48 hours
 					before graduation.  PonyVote is it.  I'll make a new code pony for whatever suggestion has the
 					most votes at the end of career day, and post it on my website at toribeth.com.</p>
-			</div>
-			<div class="col-md-2">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-			</div>
-			<div id="renderbody" class="col-md-8">
+				</div>
+			<div id="renderbody">
 				<%= yield %>
 			</div>
-			<div class="col-md-2">
+			</div>
+			<div class="hidden-xs col-sm-2">
+				<%= image_tag "rubypony_web.png", :class => "img-responsive"%>
+				<%= image_tag "csharppony_web.png", :class => "img-responsive"%>
+				<%= image_tag "geocitiespony_web.png", :class => "img-responsive"%>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-sm-2">
 			</div>
-			<div id="about" class="col-md-8">
+			<div id="about" class="col-sm-8">
 				PonyVote was built with Ruby on Rails + Bootstrap, and is deployed on Heroku.
 			</div>
-			<div class="col-md-2">
+			<div class="col-sm-2">
 			</div>
 		</div>
 	</div>

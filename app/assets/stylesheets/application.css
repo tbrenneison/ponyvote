@@ -16,11 +16,24 @@
 
 /**= require bootstrap.min*/
 
+.container{
+	width: 80%;
+	background: #ffffff;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+body {
+	background: url('cloud_bg.png') repeat;
+}
+
 #header {
 	text-align: center;
 }
 
 #header h1 {
+	font-size: 400%;
 	text-align:center;
 	margin: 5px;
 	padding: 5px;
@@ -34,15 +47,14 @@
 
 #about {
 	text-align:center;
-	border: 1px solid black;
 	/*to push down from header*/
 	margin-top: 20px;
-	padding: 5px;
+	padding: 0px;
 }
 
 #about p {
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 }
 
 #renderbody {
