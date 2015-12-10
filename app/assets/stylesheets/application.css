@@ -19,6 +19,7 @@
 .container{
 	width: 80%;
 	background: #ffffff;
+	border: 3px solid hotpink;
 	border-radius: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
