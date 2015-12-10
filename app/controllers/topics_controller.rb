@@ -4,7 +4,11 @@ class TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
   def index
-    @topics = Topic.all
+    if params[:search]
+      @topics = Topic.search(params[:search], params[:id]).sort_by {|t| t.votes.count}.reverse 
+    else
+    @topics = Topic.all.sort_by {|t| t.votes.count}.reverse 
+    end
   end
 
   # GET /topics/1
@@ -77,6 +81,9 @@ class TopicsController < ApplicationController
         format.html { redirect_to topics_url, notice: 'Topic has zero votes, cannot downvote.'}
     end
   end
+  
+
+  
   
 end
 

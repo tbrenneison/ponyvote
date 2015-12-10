@@ -16,6 +16,60 @@
 
 *= require bootstrap.min
 
-.header{
+#header {
+	text-align: center;
+}
+
+#header h1 {
+	text-align:center;
+	margin: 5px;
+	padding: 5px;
+}
+
+#header p {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+#about {
+	text-align:center;
+	border: 1px solid black;
+	/*to push down from header*/
+	margin-top: 20px;
+	padding: 5px;
+}
+
+#about p {
+	margin: 0px;
+	padding: 0px;
+}
+
+#renderbody {
+	/*to push down from about box*/
+	margin-top: 20px;
+	padding: 0px;
+}
+
+#renderbody .table {
+	width: 100%;
+}
+
+.table {
+	margin-bottom: 0px;
+}
+
+.tablewrap {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+.displayinline{
+	display: inline-block;
+	margin: 0px auto;
+}
+
+.aligncenter {
 	text-align: center;
 }

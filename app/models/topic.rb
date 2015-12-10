@@ -5,4 +5,12 @@ class Topic < ActiveRecord::Base
     @topic.votes.create
   end
     
+  def self.search(search, id)
+   if search
+     where(['title LIKE ?', "%#{search}%"])
+   else
+    scoped
+   end
+  end  
+    
 end
