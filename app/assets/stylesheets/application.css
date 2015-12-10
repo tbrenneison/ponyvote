@@ -14,7 +14,7 @@
  *= require_self
  */
 
-*= require bootstrap.min
+/**= require bootstrap.min*/
 
 #header {
 	text-align: center;
