@@ -19,7 +19,7 @@
 .container{
 	width: 90%;
 	background: #ffffff;
-	border: 3px solid hotpink;
+	border: 3px solid #FF7EB0;
 	border-radius: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -34,7 +34,9 @@ body {
 }
 
 #header h1 {
-	font-size: 400%;
+	font-family: 'Rock Salt', cursive;
+	font-weight: bold;
+	font-size: 450%;
 	text-align:center;
 	margin: 5px;
 	padding: 5px;
@@ -70,13 +72,21 @@ body {
 
 .table {
 	margin-bottom: 0px;
+	border-radius: 10px;
 }
 
 .tablewrap {
 	margin: 0px;
 	padding: 0px;
 	border: 1px solid black;
+		border-radius: 10px;
+		overflow: hidden;
 }
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #FFFBCE;
+ }
 
 .displayinline{
 	display: inline-block;

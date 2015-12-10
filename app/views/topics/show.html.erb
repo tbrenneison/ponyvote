@@ -1,14 +1,17 @@
+<hr>
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Title:</strong>
+  <br>
   <%= @topic.title %>
 </p>
 
 <p>
   <strong>Description:</strong>
+  <br>
   <%= @topic.description %>
 </p>
+<br>
 
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', topics_path %>
+<%= button_to "Back to Pony Index", { :action => 'index'}, :method => :get %>
